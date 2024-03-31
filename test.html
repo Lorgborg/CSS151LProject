@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title> 
+		How to exclude particular class 
+		name from CSS selector ? 
+	</title> 
+	
+	<meta charset="utf-8"> 
+	<meta name="viewport" content= 
+			"width=device-width, initial-scale=1"> 
+	
+	<link rel="stylesheet" href= 
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+	
+	<style> 
+		h1, h3 { 
+			text-align: center; 
+		} 
+		.todo { 
+			color: gray; 
+		} 
+		
+		/* Style to all li element except todo class name */ 
+		li:not(.todo) { 
+			text-decoration: line-through; 
+			color: green; 
+		} 
+	</style> 
+</head> 
+
+<body> 
+	<div class="container"> 
+		
+		<h1 class="text-success"> 
+			GeeksforGeeks 
+		</h1> 
+		<hr/> 
+		
+		<h3>To-Do List:</h3> 
+		
+		<ul class="list-group"> 
+			<li class="list-group-item"> 
+				Complete The Online Course 
+			</li> 
+			
+			<li class="list-group-item"> 
+				Goto Kolkata On Wednesday 
+			</li> 
+			
+			<li class="todo list-group-item"> 
+				Write Another Article For GeeksforGeeks 
+			</li> 
+			
+			<li class="todo list-group-item"> 
+				Complete Java Assignment 
+			</li> 
+			
+			<li class="todo list-group-item"> 
+				Buy Books On JavaScript 
+			</li>	 
+		</ul> 
+	</div> 
+</body> 
+
+</html> 
